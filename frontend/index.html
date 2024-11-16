@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Grid Layout</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <!-- Asosiy grid tuzilmasi -->
+    <div class="flex h-screen">
+      <!-- Chap tomondagi Category qismi (300px kenglikda) -->
+      <div class="w-72 bg-blue-500 text-white flex items-center justify-center">
+        <h2>Category</h2>
+      </div>
+
+      <!-- Ong tomondagi bo'limlar (Navbar va Content) -->
+      <div class="flex flex-col flex-grow gap-4 p-4">
+        <!-- Navbar qismi -->
+        <div
+          class="bg-green-500 text-white h-16 flex items-center justify-center"
+        >
+          <h2>Navbar</h2>
+        </div>
+
+        <!-- Content qismi -->
+        <div class="bg-white flex-grow shadow-lg rounded-lg p-6">
+          <h2 class="text-gray-700">Content</h2>
+          <p class="text-gray-600 mt-4">
+            Bu bo'lim kontent uchun mo'ljallangan.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

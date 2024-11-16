@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body {
+      width: 100%;
+      height: 100vh;
+      display: grid;
+      place-items: center;
+    }
+    .calc_container {
+      width: 350px;
+      display: grid;
+      gap: 40px;
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    }
+
+    .calc_input {
+      width: 100%;
+      height: 80px;
+      border-radius: 15px;
+      box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+        rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    }
+
+    .cell_container {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(4, 60px);
+      justify-content: space-between;
+      align-items: center;
+      grid-gap: 10px;
+    }
+
+    .cell {
+      height: 60px;
+      border-radius: 50%;
+      box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+        rgba(17, 17, 26, 0.1) 0px 0px 8px;
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+      font-size: 20px;
+    }
+
+    .equal_cell {
+      grid-column: 3 / 5;
+      border-radius: 30px;
+    }
+
+    .calc_input {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      font-size: 30px;
+      padding: 10px;
+    }
+  </style>
+  <body>
+    <div class="calc_container">
+      <div class="calc_input">12-1</div>
+
+      <div class="cell_container">
+        <div class="cell">AC</div>
+        <div class="cell">DEL</div>
+        <div class="cell">%</div>
+        <div class="cell">/</div>
+        <div class="cell">7</div>
+        <div class="cell">8</div>
+        <div class="cell">9</div>
+        <div class="cell">*</div>
+        <div class="cell">4</div>
+        <div class="cell">5</div>
+        <div class="cell">6</div>
+        <div class="cell">-</div>
+        <div class="cell">1</div>
+        <div class="cell">2</div>
+        <div class="cell">3</div>
+        <div class="cell">+</div>
+        <div class="cell">.</div>
+        <div class="cell">0</div>
+        <div class="cell equal_cell">=</div>
+      </div>
+    </div>
+  </body>
+</html>
